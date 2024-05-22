@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.enlace{
+  display: block;
+  background-color: steelblue;
+  padding: 20px;
+  color: aliceblue;
+  text-decoration: none;
+  border-bottom: 5px #333;
+}
+.enlace:visited{
+  /* sumbraya links que se han visitado */
+}
+.enlace:link{
+  /* marcar links que no se hayan visitado */
+
+}
+.enlace:hover{
+  /* se aplica cuando el cursor se desplaza sobre la etiqueta */
+}
+.enlace:active{
+  /* cuando el cursor esta por cierto tiempo en un link se desplaza al link */
+}
+
+.form{
+  width: 80%;
+  margin: 30px auto;
+  background: #f2f2f2;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+
+}
+
+.form_title{
+  text-align: center;
+  padding: 20px;
+}
+input{
+  display: block;
+}
+
+input[type=email],
+[type=text]{
+  width: 100%;
+  margin: 5px 10px 20px 20px;
+  padding: 12px 5px;
+  border: none;
+  outline: none;
+  transition: 1s;
+}
+input[type="checkbox"]{
+  display: inline-block;
+}
+
+input:focus{
+  background: steelblue;
+}
+input::placeholder{
+  color: #333;
+}
+
+input[type="checkbox"]:checked + label{
+  color: blue;
+
+}
+
+.event{
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 20px;
+  background: red;
+  color: #f2f2f2;
+  padding: 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.event:active{
+  padding: 50px;
+}
+#objetivo{
+  width: 100px;
+  height: 100px;
+  background: greenyellow;
+  margin: 20px;
+  transition: 0.5s;
+}
+
+#objetivo:target{
+  border-radius: 50%;
+}
+
+h3{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+}
+h3:not(.titulo):not(:hover){
+  color: steelblue;
+}
