@@ -1,13 +1,38 @@
+:root{
+  --colorazul: steelblue;
+  --colorblanco: #f2f2f2;
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.contenedor_links{
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.link{
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  border: 2px dashed black;
+  border-radius: 30px;
+  transition: 300ms;
+}
+.link:hover{
+  background: var(--colorazul);
+  border: 2px solid black;
+}
+
 .enlace{
   display: block;
-  background-color: steelblue;
+  background-color: var(--colorazul);
   padding: 20px;
-  color: aliceblue;
+  color: var(--colorblanco);
   text-decoration: none;
   border-bottom: 5px #333;
 }
@@ -28,7 +53,7 @@
 .form{
   width: 80%;
   margin: 30px auto;
-  background: #f2f2f2;
+  background: var(--colorblanco);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   padding: 30px;
 
@@ -56,7 +81,7 @@ input[type="checkbox"]{
 }
 
 input:focus{
-  background: steelblue;
+  background: var(--colorazul);
 }
 input::placeholder{
   color: #333;
@@ -72,7 +97,7 @@ input[type="checkbox"]:checked + label{
   margin-top: 30px;
   margin-left: 20px;
   background: red;
-  color: #f2f2f2;
+  color: var(--colorblanco);
   padding: 20px;
   text-decoration: none;
   transition: 0.5s;
@@ -101,5 +126,5 @@ h3{
   margin-top: 30px;
 }
 h3:not(.titulo):not(:hover){
-  color: steelblue;
+  color: var(--colorazul);
 }

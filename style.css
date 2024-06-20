@@ -1,21 +1,24 @@
 :root{
-    --gradient: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
-    --color_borde: #1d149e;
+    --gradient: linear-gradient(to top, #09203f 0%, #537895 100%);
+    --color_borde: aliceblue;
+    --color_borde2: black;
 }
+
 
 body{
     background: var(--gradient);
 }
 
 .titulo{
-    color: rgb(70, 146, 146);
+    color: var(--color_borde);
+    text-decoration: underline;
     text-align: center;
     margin-bottom: 10px;
     font-size: 3rem;
 }
 .nombre{
     font-size: 1rem;
-    color: black ;
+    color: var(--color_borde2) ;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -27,9 +30,9 @@ body{
     text-decoration: none;
     font-size: 2rem;
     padding: 20px;
-    color: aliceblue;
+    color: var(--color_borde2);
     margin: 3px;
-    border: 2px solid var(--color_borde);
+    border: 2px solid var(--color_borde2);
     width: 400px;
     border-radius: 20px;
     margin: 20px auto;
@@ -37,11 +40,13 @@ body{
     
 }
 .link:visited{
-    color: rgb(51, 38, 100);
-    background: #7edbdc ;
+    color: var(--color_borde);
+    border: 2px solid var(--color_borde);
+    
 }
 
 .link:hover{
     transform: scale(1.1);
-    background: #828285;
+    background: rgb(162, 190, 243);
 }
+    

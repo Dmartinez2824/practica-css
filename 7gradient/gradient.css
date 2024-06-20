@@ -80,18 +80,42 @@ margin: 20px 0 auto;
     --margin:30px auto;
     --width:300px;
     --padding:30px 20px;
+    --colorazul: steelblue;
+    --colornegro: black;
    
 }
+
 
 body{
     font-family:Arial, Helvetica, sans-serif;
     min-height: 100vh;
     background-image: var(--gradient);
 }
+.contenedor_links{
+    height: 80px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .link{
+    font-size: 20px;
+    display: inline-block;
+    background: var(--white);
+    text-decoration: none;
+    color: var(--colornegro);
+    padding: 20px;
+    border: 2px dashed var(--colornegro);
+    border-radius: 30px;
+    transition: 500ms;
+  }
+  .link:hover{
+    background: var(--gradient);
+    border: 2px solid var(--colornegro);
+  }
 
 
 .card{
-    color: var(--black, blue);
+    color: var(--colornegro, blue);
     background: var(--white);
     width: var(--width);
     margin: var(--margin);
@@ -145,8 +169,8 @@ body{
 
 }
 .button--black{
-    background: #000;
+    background: var(--colornegro);
 }
 .card2{
-    --black:var(--black)
+    --black: #000;
 }

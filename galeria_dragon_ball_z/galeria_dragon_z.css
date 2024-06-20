@@ -1,7 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Fredericka+the+Great&display=swap');
 :root{
   --color1: rgb(133, 110, 209);
+  --colorblanco: aliceblue;
 }
+.contenedor_links{
+  height: 80px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.link{
+  font-size: 20px;
+  display: inline-block;
+  width: 70px;
+  text-decoration: none;
+  color: var(--colorblanco);
+  padding: 20px;
+  border: 2px dashed var(--colorblanco);
+  border-radius: 30px;
+  transition: 300ms;
+}
+.link:hover{
+  background: var(--color1);
+  border: 2px solid var(--colorblanco);
+}
+
+
 body {
   background: #333;
   padding: 0px 200px 0px 200px;
@@ -10,6 +34,8 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+
 h2,
 p {
   margin: 0px;
@@ -45,7 +71,7 @@ h2{
 
 p{
   padding: 30px;
-  color: black;
+  color: black ;
 }
 
 .card:hover{
